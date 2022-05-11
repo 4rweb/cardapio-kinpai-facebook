@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+}
+.tit_abas {
+	margin-left:30px;
+}
+#geral {
+	background: url(imgs/back.png);
+	background-repeat:no-repeat;
+	width:520px;
+	overflow:hidden;
+	height:auto;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	padding-top: 125px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#efeito {
+	width:520px;
+	border-bottom: solid 3px #dedede;
+}
+.tit_cardapios {
+	padding-top: 10px;
+}
+#efeito a {
+	border-top: solid 1px #dedede;
+	display:block;
+	font-weight:bold;
+	color:#fff;
+	padding:12px 10px;
+	text-decoration:none;
+	background:#fff url(imgs/expanded.gif) no-repeat scroll 13px 17px;
+	height:28px;
+	overflow:hidden;
+}
+#efeito a:hover {
+	background:#f8f8f8 url(imgs/expanded.gif) no-repeat scroll 13px 17px;
+}
+#efeito a.selected {
+	background:#f8f8f8 url(imgs/collapsed.gif) no-repeat scroll 13px 17px;
+}
+#efeito .tit_cardapios img {
+	cursor:pointer;
+	margin:0 10px 10px 0;
+}
+div p {
+	padding:7px 0;
+}
+</style>
+<script type="text/javascript" src="exemplos/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="exemplos/jquery-accordion/jquery.accordion.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#efeito').accordion({
+	autoheight:false
+	});
+});
+function abreJanela(url){
+	window.open(url, "", "");
+}
+</script>
+<meta charset="UTF-8">
+<title>Kinpai Sushi Bar - Cardápio</title>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=154885544621134";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+window.fbAsyncInit = function() {
+FB.Canvas.setAutoGrow();
+}
+</script>
+
+<div id="geral">
+  <div class="fb-like" data-href="http://kinpaisushi.com.br/landpages/cardapio/fanpage.html" data-send="true" data-width="450" data-show-faces="true" data-font="lucida grande">
+  </div>
+  <h1 style="display:none;">Nosso Cardápio</h1>
+  <div id="efeito"> <a href="#"><img src="imgs/titulos/tit_01.png" alt="TEPPAN YAKI" width="450" height="31" border="0" class="tit_abas" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/01.jpg" width="520" height="132" alt="Grelhado c/ yakisoba yasai na chapa" title="TEPPAN YAKI" border="0" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_02.png" width="450" height="31" alt="YAKISOBA" /></a>
+    <div class="tit_cardapios"><img src="imgs/cardapio/02.jpg" width="520" height="141" alt="Macarrão oriental c/ legumes e molho tonkatsu" title="YAKISOBA" border="0" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_03.png" width="450" height="31" alt="COMBINADOS" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/03.jpg" width="520" height="658" alt="Combinados" title="COMBINADOS KINPAI SUSHI BAR" border="0" /> </div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_04.png" width="450" height="31" alt="SASHIMI" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/04.jpg" alt="Aventuras do Didi" title="SASHIMI" border="0" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_05.png" width="450" height="31" alt="OTOSHI" /></a>
+    <div class="tit_cardapios"> <img onclick="abreJanela('http://g1.globo.com/acao/');" src="imgs/cardapio/05.jpg" alt="OTOSHI - Entradas" title="OTOSHI" border="0" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_06.png" width="450" height="31" alt="KUSHIAGUE" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/06.jpg" alt="espetinhos c/ molho teriyaki no pote" title="KUSHIAGUE" border="0" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_07.png" width="450" height="31" alt="FURAE" /></a>
+    <div class="tit_cardapios"> <img 	src="imgs/cardapio/07.jpg" alt="FURAE" title="FURAE" border="0" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_08.png" width="450" height="31" alt="TSUKAEWASE" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/08.jpg" alt="TSUKAEWASE" title="TSUKAEWASE" border="0" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_09.png" width="450" height="31" alt="TEMPURA" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/09.jpg" alt="TEMPURA" width="520" height="116" border="0" title="TEMPURA" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_10.png" width="450" height="31" alt="SUSHI" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/10.jpg" alt="SUSHI" width="520" height="357" border="0" title="SUSHI" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_11.png" width="450" height="31" alt="MAKI - ZUSHI" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/11.jpg" alt="MAKI - ZUSHI" width="520" height="493" border="0" title="MAKI - ZUSHI" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_12.png" width="450" height="31" alt="HOSO MAKI" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/12.jpg" alt="HOSO MAKI" width="520" height="539" border="0" title="HOSO MAKI" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_13.png" width="450" height="31" alt="NIGIRI - ZUSHI" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/13.jpg" alt="NIGIRI - ZUSHI" width="520" height="246" border="0" title="NIGIRI - ZUSHI" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_14.png" width="450" height="31" alt="TEMAKI - ZUSHI" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/14.jpg" alt="TEMAKI - ZUSHI" width="520" height="320" border="0" title="TEMAKI - ZUSHI" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_15.png" width="450" height="31" alt="PRATOS ESPECIAIS" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/15.jpg" alt="PRATOS ESPECIAIS" width="520" height="436" border="0" title="PRATOS ESPECIAIS" /></div>
+    <a href="#"><img class="tit_abas" src="imgs/titulos/tit_16.png" width="450" height="31" alt="DEZAATO - Sobremesas" /></a>
+    <div class="tit_cardapios"> <img src="imgs/cardapio/16.jpg" alt="DEZAATO - Sobremesas" width="520" height="426" border="0" title="DEZAATO - Sobremesas" /></div>
+  </div>
+</div>
+</body>
+</html>
+
+<!-- Localized -->
